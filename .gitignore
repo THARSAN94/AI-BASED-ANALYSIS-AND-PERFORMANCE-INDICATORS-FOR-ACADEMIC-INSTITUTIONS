@@ -1,0 +1,10 @@
+node_modules/
+# Local runtime data (auto-seeded on startup; contains user accounts & assessments)
+data/database.json
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example

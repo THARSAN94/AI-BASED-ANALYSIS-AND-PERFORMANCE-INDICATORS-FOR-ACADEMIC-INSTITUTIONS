@@ -1,0 +1,6 @@
+{
+  "name": "AI-Based Academic Performance and Approval Eligibility Analysis System",
+  "description": "Comprehensive pre-assessment and compliance analysis platform for educational institutions evaluating AICTE approval criteria and UGC Section 2(f)/12(B) recognition readiness.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

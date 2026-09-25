@@ -1,0 +1,209 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Space Grotesk', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+    --bg-page: #f8fafc;
+    --card-surface: #ffffff;
+    --card-muted: #f1f5f9;
+    --border-subtle: #e2e8f0;
+    --border-medium: #cbd5e1;
+    --text-heading: #0f172a;
+    --text-body: #334155;
+    --text-muted: #64748b;
+    --primary-hero: #0f172a;
+    --primary-accent: #4f46e5;
+    --primary-accent-hover: #4338ca;
+    color-scheme: light;
+  }
+
+  /* 5 Typographic Styles */
+  /* 1. Modern Executive (Grotesk + Clean Sans) */
+  [data-font="modern-executive"] {
+    --font-heading: 'Space Grotesk', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  }
+
+  /* 2. Archival Academic (Collegiate Classical Serif + Literary Body) */
+  [data-font="archival-academic"] {
+    --font-heading: 'Cormorant Garamond', Georgia, serif;
+    --font-body: 'Lora', Georgia, serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  }
+
+  /* 3. Technical Blueprint (High-Precision Monospace Audit Console) */
+  [data-font="technical-blueprint"] {
+    --font-heading: 'JetBrains Mono', ui-monospace, monospace;
+    --font-body: 'JetBrains Mono', ui-monospace, monospace;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  }
+
+  /* 4. Geometric Humanist (Architectural Clean Sans) */
+  [data-font="geometric-humanist"] {
+    --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  }
+
+  /* 5. Editorial Gazette (Official Statutory Gazette & Decree Serif) */
+  [data-font="editorial-gazette"] {
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body: 'Lora', Georgia, serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  }
+
+  /* Light Mode Palette */
+  :root, [data-mode="light"] {
+    --bg-page: #f8fafc;
+    --card-surface: #ffffff;
+    --card-muted: #f1f5f9;
+    --border-subtle: #e2e8f0;
+    --border-medium: #cbd5e1;
+    --text-heading: #0f172a;
+    --text-body: #334155;
+    --text-muted: #64748b;
+    --primary-hero: #0f172a;
+    --primary-accent: #4f46e5;
+    --primary-accent-hover: #4338ca;
+    color-scheme: light;
+  }
+
+  /* Dark Mode Palette */
+  [data-mode="dark"], .dark, [data-theme="dark-cockpit"] {
+    --bg-page: #090d16;
+    --card-surface: #0f172a;
+    --card-muted: #131b2e;
+    --border-subtle: #1e293b;
+    --border-medium: #334155;
+    --text-heading: #f8fafc;
+    --text-body: #cbd5e1;
+    --text-muted: #94a3b8;
+    --primary-hero: #030712;
+    --primary-accent: #06b6d4;
+    --primary-accent-hover: #0891b2;
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: var(--bg-page);
+    color: var(--text-body);
+    font-family: var(--font-body);
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-serif {
+  font-family: var(--font-heading);
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', Georgia, serif;
+}
+
+.font-sans {
+  font-family: var(--font-body);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Comprehensive Dark Mode Polish for Cards, Tables & Form Inputs */
+.dark .bg-white {
+  background-color: #0f172a !important;
+  color: #f8fafc !important;
+}
+
+.dark .bg-\[\#fafaf7\],
+.dark .bg-\[\#f5f2ea\],
+.dark .bg-\[\#f6f8fb\],
+.dark .bg-slate-50,
+.dark .bg-stone-50 {
+  background-color: #131b2e !important;
+  color: #e2e8f0 !important;
+}
+
+.dark .border-stone-200,
+.dark .border-stone-300,
+.dark .border-slate-200,
+.dark .border-slate-300 {
+  border-color: #1e293b !important;
+}
+
+.dark .text-stone-900,
+.dark .text-slate-900,
+.dark .text-\[\#0c1f38\] {
+  color: #f8fafc !important;
+}
+
+.dark .text-stone-700,
+.dark .text-slate-700 {
+  color: #cbd5e1 !important;
+}
+
+.dark .text-stone-600,
+.dark .text-slate-600,
+.dark .text-stone-500,
+.dark .text-slate-500 {
+  color: #94a3b8 !important;
+}
+
+.dark input[type="text"],
+.dark input[type="number"],
+.dark input[type="email"],
+.dark input[type="password"],
+.dark select,
+.dark textarea {
+  background-color: #091124 !important;
+  border-color: #334155 !important;
+  color: #f8fafc !important;
+}
+
+.dark input[type="text"]:focus,
+.dark input[type="number"]:focus,
+.dark input[type="email"]:focus,
+.dark input[type="password"]:focus,
+.dark select:focus,
+.dark textarea:focus {
+  border-color: #6366f1 !important;
+  background-color: #0d1833 !important;
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: #64748b !important;
+}
+
+.dark select option {
+  background-color: #091124;
+  color: #f8fafc;
+}
+
+/* Custom scrollbars adapted to active theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-page);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-medium);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
