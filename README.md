@@ -1,3 +1,13 @@
+ 🎓 AI Based Analysis and Performance Indicators for Academic Institutions
+
+🤖 **AI Based Analysis and Performance Indicators for Academic Institutions** is an AI-powered web application designed to help educational institutions analyze 📊 academic performance, monitor 📈 key performance indicators, and evaluate institutional data efficiently. The system uses AI and data analytics to generate meaningful insights, identify performance trends, and support institutions in improving academic quality and decision-making. 🚀
+
+## 🛠️ Tech Stack
+
+💻 React.js | ⚙️ Node.js | 🍃 MongoDB | 🐍 Python | 🧠 AI/ML
+
+## 👨‍💻 Developer
+
 ## Run Locally
 
 **Prerequisites:**  Node.js
