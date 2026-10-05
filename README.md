@@ -4,7 +4,7 @@
 
 ## 🛠️ Tech Stack
 
-💻 React.js | ⚙️ Node.js | 🍃 MongoDB | 🐍 Python | 🧠 AI/ML
+💻 React.js | ⚙️ Node.js | 🍃 MongoDB | 🐍 Python | 🧠 AI/ML 
 
 ## 👨‍💻 Developer
 
